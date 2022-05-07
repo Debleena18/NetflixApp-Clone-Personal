@@ -2,8 +2,7 @@ import './App.css';
 import Banner from './Components/Banner';
 import Navbar from './Components/Navbar';
 import Row from './Components/Row';
-import requests from './requests';
-
+import requests from './axios/requests';
 
 
 function App() {
