@@ -4,13 +4,13 @@ import './Navbar.css';
 
 function Navbar() {
 
-    const [show, handleShow] = useState(false);
+    const [show, setShow] = useState(false);
 
   useEffect(() => {
       window.addEventListener("scroll", () =>{
           if(window.scrollY > 100){
-              handleShow(true);
-          }else handleShow(false);
+              setShow(true);
+          }else setShow(false);
       });
       return () => {
           window.removeEventListener("scroll");
